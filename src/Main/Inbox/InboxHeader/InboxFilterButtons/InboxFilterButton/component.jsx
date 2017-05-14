@@ -2,10 +2,10 @@ import React from 'react';
 
 class InboxFilterButton extends React.Component {
   render() {
-    const { name } = this.props;
+    const { name, color } = this.props;
     return (
       <div className="inbox-filter-button">
-        <p><span className="checkbox">O</span> {name}</p>
+        <strong className={`checkbox ${color}`}>O</strong> {name}
       </div>
     );
   }

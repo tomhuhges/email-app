@@ -8,7 +8,7 @@ const messages = [
     sender: 'Zuzanna Romańska',
     sendtime: '2h ago',
     subject: 'Re: Design for Dribbble shot',
-    excerpt: 'I love your user interface work and I\'d like to talk with you about possibly',
+    content: 'I love your user interface work and I\'d like to talk with you about possibly',
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const messages = [
     sender: 'Agata Wlodarczyk',
     sendtime: '3h ago',
     subject: 'Re: Assets to Landing Page',
-    excerpt: 'Hi Kamil, Want to jump aboard Europe\'s fastest internet incubator?',
+    content: 'Hi Kamil, Want to jump aboard Europe\'s fastest internet incubator?',
   },
   {
     id: 3,
@@ -24,7 +24,8 @@ const messages = [
     sender: 'Kamil Bachanek',
     sendtime: '1 day ago',
     subject: 'Re: UX/UI for 10Clouds in Atlanta',
-    excerpt: 'I love your user interface work and I\'d like to talk with you about possibly',
+    content: 'I love your user interface work and I\'d like to talk with you about possibly',
+    selected: true,
   },
   {
     id: 4,
@@ -32,7 +33,7 @@ const messages = [
     sender: 'Kasia Kajka',
     sendtime: '1 day ago',
     subject: 'Work opportunity',
-    excerpt: 'Excuse my unexpected approach from the off, I am searching for an UX/UI expert for our',
+    content: 'Excuse my unexpected approach from the off, I am searching for an UX/UI expert for our',
   },
   {
     id: 5,
@@ -40,7 +41,7 @@ const messages = [
     sender: 'Monica Kajka',
     sendtime: '2 days ago',
     subject: 'New workflow for CRM',
-    excerpt: 'I love your user interface work and I\'d like to talk with you about possibly',
+    content: 'I love your user interface work and I\'d like to talk with you about possibly',
   },
 ];
 
@@ -48,7 +49,7 @@ class MessageList extends React.Component {
   render() {
     return (
       <div className="message-list">
-        {messages.map(message => <Message key={message.id} {...message} />)}
+        {messages.map(message => <Message isList key={message.id} {...message} />)}
       </div>
     );
   }

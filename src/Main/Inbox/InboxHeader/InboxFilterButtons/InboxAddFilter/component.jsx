@@ -4,7 +4,7 @@ class InboxAddFilter extends React.Component {
   render() {
     return (
       <div className="inbox-add-filter">
-        <p><span className="add-filter-icon">+</span> Add</p>
+        <strong className="add-filter-icon white">+</strong> Add
       </div>
     );
   }

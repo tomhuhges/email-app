@@ -1,0 +1,64 @@
+@import "../../node_modules/tachyons/css/tachyons.css";
+body {
+  margin: 0;
+}
+
+* {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.blue {
+  color: #487cec;
+}
+
+.gray {
+  color: #6a6b79;
+}
+
+.bg-mid-light-gray {
+  background: linear-gradient(to right, #444b5f, #44475a);
+}
+
+.bg-mid-gray {
+  background: linear-gradient(to right, #34394d, #262734);
+}
+
+.bg-dark-gray {
+  background: linear-gradient(to bottom right, #2a2f47, #171825);
+}
+
+.w15 {
+  width: 1.5rem;
+}
+
+.h15 {
+  height: 1.5rem;
+}
+
+.w75 {
+  width: 0.75rem;
+}
+
+.h75 {
+  height: 0.75rem;
+}
+
+.w03 {
+  width: 0.3rem;
+}
+
+.h03 {
+  height: 0.3rem;
+}
+
+.search-bar-input::placeholder {
+  color: #fff;
+}
+
+.tab {
+  top: -18px;
+}
